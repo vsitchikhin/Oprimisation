@@ -1,6 +1,3 @@
-# import methods.SearchSegment
-import numpy as np
-
 import algorithms.first as first_algorithm
 import algorithms.second as fibonacci
 import algorithms.third as pauel
