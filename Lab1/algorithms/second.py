@@ -11,7 +11,7 @@ def build_fibonacci_row(a, b, eps):
     
     fibonacci_row = [1, 1]
     
-    while fib1 + fib2 <= (a + b) / eps:
+    while fib1 + fib2 <= abs((a + b) / eps):
         fibonacci_row.append(fib1 + fib2)
         fib1 = fib2
         fib2 = fibonacci_row[len(fibonacci_row) - 1]

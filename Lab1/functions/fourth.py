@@ -6,4 +6,5 @@ def function_value(x, h=0):
   if 4 - pow(x + h, 2) != 0:
     return (x + h + 2.5) / (4 - pow(x + h, 2))
   else:
-    return np.inf
+    x += 0.0000000001
+    return (x + h + 2.5) / (4 - pow(x + h, 2))
